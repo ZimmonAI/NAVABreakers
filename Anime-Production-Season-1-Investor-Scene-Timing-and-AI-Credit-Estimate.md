@@ -26,7 +26,7 @@ model_assumed: Dreamina Seedance 2.5
 
 ### Whole season by episode
 
-| Episode | Cumulative season position | Final edited time | Slice-of-life included | Fight-window time | Edited **3× / 1× / 0.2×** | Successful native footage | Rounded successful source seconds | Worst paid sec (12% success) |
+| Episode | Cumulative season position | Final edited time | Slice-of-life included | Fight-window time | Edited **3× / 1× / 0.2×** | Successful native footage | Rounded successful source seconds | Estimated paid seconds (12% usable) |
 | --- | --- | ---: | ---: | ---: | --- | ---: | ---: | ---: |
 | E01 | 00:00:00–00:09:55 | 9:55 | 1:00 | 0:00 | 0:00 / 9:55 / 0:00 | 9:55 | 595 | 4,961 |
 | E02 | 00:09:55–00:20:55 | 11:00 | 1:00 | 0:00 | 0:00 / 11:00 / 0:00 | 11:00 | 660 | 5,501 |
@@ -63,27 +63,25 @@ For one scene let `T` = final edited seconds, and `W` = true fighting-exchange s
 
 **Concrete example: E06-S002** is a **2:30 scene**, of which **1:20 is fighting**. Its edited-time categories are **0:40 at 3×**, **1:34 at 1×** (including the 1:10 nonfight portion), and **0:16 at 0.2×**. Successful source = `40 × 3 + 94 + 16 × 0.2 = 217.2 seconds`. Rounded planned source = **218s**. The 1:10 outside the fight does **not** get sped up or slowed.
 
-### Your required success/failure ratios
+### Credit estimation assumptions
 
-| Scenario | Success rate | Failure rate | Expected attempts per usable result | Paid generated seconds for season | Credits at rate R |
-|---|---:|---:|---:|---:|---:|
-| **Best** | **50%** | 50% | **2×** | **12,376s** | **12,376 × R** |
-| **Medium** | **30%** | 70% | **3.33×** (1/0.30) | **20,640s** | **20,640 × R** |
-| **Worst** | **12%** | 88% | **8.33×** (1/0.12) | **51,580s** | **51,580 × R** |
+| Assumed usable-generation rate | Rejected-generation rate | Expected attempts per usable result | Paid generated seconds for season | Credits at rate R |
+|---:|---:|---:|---:|---:|
+| **12%** | **88%** | **8.33×** (1/0.12) | **51,580s** | **51,580 × R** |
 
-**Rounding convention:** every scene's successful-source requirement B is multiplied by the reciprocal success rate and rounded up to a whole paid second: `ceil(B/0.50)`, `ceil(B/0.30)`, or `ceil(B/0.12)`. The episode/season budget is the **sum of the 52 scene-rounded estimates**, not a once-rounded season-wide ratio. These are expected-planning amounts, not guarantees of actual attempts.
+**Rounding convention:** for each scene, paid generated seconds are `ceil(B/0.12)`, where B is the rounded successful-source requirement. The episode and season budgets sum the **52 scene-rounded estimates**, rather than rounding the season as a whole. The assumed 12% usable-generation rate corresponds to 88% rejected footage and an average of 8.33 attempts per usable result; actual attempts may differ.
 
-**R = [verified current Dreamina Seedance 2.5 credits per generated video second for actual settings]**. It has not been checked against live platform pricing. If the platform bills fixed clip lengths or different rates for audio/resolution, replace the one-second rounding with real billing increments before making a numerical credit promise. These three scenarios are alternatives, not additive funding tiers.
+**R = [verified current Dreamina Seedance 2.5 credits per generated video second for actual settings]**. It has not been checked against live platform pricing. If the platform bills fixed clip lengths or different rates for audio/resolution, replace the one-second rounding with real billing increments before making a numerical credit promise.
 
 **Quality caution:** 3× editing does not create missing fast-action detail; 0.2× playback can require interpolation and may create artifacts. Dialogue audio and sound effects must be processed separately if visual footage is retimed.
 
 ## 3. Each episode and scene: final, fighting, generated and paid time
 
-In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The edit columns show *final edited time* in speed categories. Source footage is the native-speed generated duration before failed attempts. The best/medium/worst columns represent generated seconds at 50% / 30% / 12% success, with rounding up performed separately per scene. Resource IDs are placeholders defined solely in Section 5 (no other file references needed).
+In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The edit columns show *final edited time* in speed categories. Source footage is the native-speed generated duration before failed attempts. The paid-seconds column uses a single assumed 12% usable-generation rate, rounded up separately for each scene. Resource IDs are placeholders defined solely in Section 5 (no other file references needed).
 
 ## Episode 1 — An Ordinary Day in the Scrapyard (9:55)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------------- |
 | **E01-S001** — First look | ![Webtoon panel E01-W-P1](assets/anime-season-1-investor/E1/E01-W-P1.png)<br>[View full image](assets/anime-season-1-investor/E1/E01-W-P1.png) | 0:00–1:20 | A flying livestreamer approaches apparent scrap and discovers an inhabited village. | 1:20 | 0:00 | **0:00 / 1:20 / 0:00** | 1:20 | 80s | 667 | C04,C12 ·  L01,L04 ·  P04 |
 | **E01-S002** — Market rhythm | ![Webtoon panel E01-W-P3](assets/anime-season-1-investor/E1/E01-W-P3.png)<br>[View full image](assets/anime-season-1-investor/E1/E01-W-P3.png) | 1:20–2:05 | The streamer passes working stalls and ordinary levitating stock; locals are accustomed to it. | 0:45 | 0:00 | **0:00 / 0:45 / 0:00** | 0:45 | 45s | 375 | C04,C12 ·  L01 ·  P04 |
@@ -95,14 +93,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E01-S008** — Everyday-life coda (expanded from 0:35 to 1:00) |  | 8:20–9:20 | A vendor repairs the familiar stall and routine trading resumes; expanded to a one-minute slice-of-life scene (pending new animatic). | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C12 ·  L01 ·  P04 |
 | **E01-S009** — Silver sphere hook | ![Webtoon panel E03-W-P5](assets/anime-season-1-investor/E3/E03-W-P5.png)<br>[View full image](assets/anime-season-1-investor/E3/E03-W-P5.png) | 9:20–9:55 | James retrieves the inactive silver sphere from lab debris and studies it silently. | 0:35 | 0:00 | **0:00 / 0:35 / 0:00** | 0:35 | 35s | 292 | C01,C02 ·  L03 ·  P01,P03 |
 | **E01 TOTAL** |  | **00:00–9:55** | **The final hook remains last.** | **9:55** | **0:00** | **0:00 / 9:55 / 0:00** | **9:55** | **595s** | 4,961 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,031,888** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,031,888** |  |
 
 **Production boundary:** E01-S008 is the existing slice-of-life scene expanded to 1:00, not an additional separate scene. Its old screenplay/animatic timing has not yet been reboarded. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 2 — Something Is Coming (11:00)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | ----------------------------------------- |
 | **E02-S001** — A sensed threat | ![Webtoon panel E03-W-P5](assets/anime-season-1-investor/E3/E03-W-P5.png)<br>[View full image](assets/anime-season-1-investor/E3/E03-W-P5.png) | 0:00–1:50 | James senses danger and checks a monitor showing Royal-looking figures approaching. | 1:50 | 0:00 | **0:00 / 1:50 / 0:00** | 1:50 | 110s | 917 | C01 ·  L03 ·  P01,P07 |
 | **E02-S002** — Protect Joir | ![Webtoon panel E03-W-P10](assets/anime-season-1-investor/E3/E03-W-P10.png)<br>[View full image](assets/anime-season-1-investor/E3/E03-W-P10.png) | 1:50–4:00 | James entrusts the sphere to Joir, orders him to stay, and equips his nano-suit. | 2:10 | 0:00 | **0:00 / 2:10 / 0:00** | 2:10 | 130s | 1,084 | C01,C02 ·  L03 ·  P01,P06 |
@@ -111,14 +109,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E02-SL01** — Everyday-life coda (proposal only) |  | 8:00–9:00 | One minute of stall recovery and ordinary conversation while villagers discount James's warning | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C12 · L01 · P04 |
 | **E02-S005** — Approaching force hook | ![Webtoon panel E03-W-P3](assets/anime-season-1-investor/E4/E03-W-P3.png)<br>[View full image](assets/anime-season-1-investor/E4/E03-W-P3.png) | 9:00–11:00 | An organized Royal group advances toward the village, confirming that the threat is real. | 2:00 | 0:00 | **0:00 / 2:00 / 0:00** | 2:00 | 120s | 1,000 | C13 · L04 · — |
 | **E02 TOTAL** |  | **00:00–11:00** | **The final hook remains last.** | **11:00** | **0:00** | **0:00 / 11:00 / 0:00** | **11:00** | **660s** | 5,501 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,144,208** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,144,208** |  |
 
 **Production boundary:** E02-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 3 — The Village That Should Be Safe (10:45)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------ | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------- |
 | **E03-S001** — Drake and Yether | ![Webtoon panel E03-W-P3](assets/anime-season-1-investor/E4/E03-W-P3.png)<br>[View full image](assets/anime-season-1-investor/E4/E03-W-P3.png) | 0:00–1:55 | The Royal approach becomes a conversation: Drake presses the uneasy informant Yether. | 1:55 | 0:00 | **0:00 / 1:55 / 0:00** | 1:55 | 115s | 959 | C08,C09,C13 ·  L04 ·  — |
 | **E03-S002** — Attack deployment | ![Webtoon panel E04-W-P8](assets/anime-season-1-investor/E4/E04-W-P8.png)<br>[View full image](assets/anime-season-1-investor/E4/E04-W-P8.png) | 1:55–3:45 | Royal units separate into positions near the village while residents continue daily life. | 1:50 | 0:00 | **0:00 / 1:50 / 0:00** | 1:50 | 110s | 917 | C08,C13,C12 ·  L01,L04,L05 ·  — |
@@ -127,14 +125,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E03-SL01** — Everyday-life coda (proposal only) |  | 7:40–8:40 | A small market transaction continues while the defenders move into position; no new lore or named character. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C12 · L01 · P04 |
 | **E03-S005** — Recognized face hook | ![Webtoon panel E04-W-P43](assets/anime-season-1-investor/E4/E04-W-P43.png)<br>[View full image](assets/anime-season-1-investor/E4/E04-W-P43.png) | 8:40–10:45 | Drake halts; Yether overshoots; James recognizes Yether and regains composure before speaking. | 2:05 | 0:00 | **0:00 / 2:05 / 0:00** | 2:05 | 125s | 1,042 | C01,C08,C09,C13 ·  L04 ·  — |
 | **E03 TOTAL** |  | **00:00–10:45** | **The final hook remains last.** | **10:45** | **0:00** | **0:00 / 10:45 / 0:00** | **10:45** | **645s** | 5,377 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,118,416** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,118,416** |  |
 
 **Production boundary:** E03-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 4 — Friends from the Past (11:15)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------- |
 | **E04-S001** — Unwelcome reunion | ![Webtoon panel E05-W-P2](assets/anime-season-1-investor/E5/E05-W-P2.png)<br>[View full image](assets/anime-season-1-investor/E5/E05-W-P2.png) | 0:00–2:05 | James greets Yether with warmth that makes the informant visibly uncomfortable. | 2:05 | 0:00 | **0:00 / 2:05 / 0:00** | 2:05 | 125s | 1,042 | C01,C08,C09 ·  L04 ·  — |
 | **E04-S002** — Offered embrace | ![Webtoon panel E05-W-P9](assets/anime-season-1-investor/E5/E05-W-P9.png)<br>[View full image](assets/anime-season-1-investor/E5/E05-W-P9.png) | 2:05–4:25 | James pretends friendliness with Drake; Drake and soldiers react with guarded fear. | 2:20 | 0:00 | **0:00 / 2:20 / 0:00** | 2:20 | 140s | 1,167 | C01,C08,C13 ·  L04 ·  — |
@@ -142,14 +140,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E04-SL01** — Everyday-life coda (proposal only) |  | 7:25–8:25 | A trader checks salvaged merchandise while danger gathers out of view; a normality-versus-threat contrast. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C12 · L01 · P04 |
 | **E04-S004** — Mask breaks hook | ![Webtoon panel E05-W-P23](assets/anime-season-1-investor/E5/E05-W-P23.png)<br>[View full image](assets/anime-season-1-investor/E5/E05-W-P23.png) | 8:25–11:15 | James learns dark-mage involvement and openly challenges Drake, ending the false civility. | 2:50 | 0:00 | **0:00 / 2:50 / 0:00** | 2:50 | 170s | 1,417 | C01,C08,C13 ·  L04 ·  P08 |
 | **E04 TOTAL** |  | **00:00–11:15** | **The final hook remains last.** | **11:15** | **0:00** | **0:00 / 11:15 / 0:00** | **11:15** | **675s** | 5,626 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,170,208** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,170,208** |  |
 
 **Production boundary:** E04-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 5 — Twelve Seconds to Prepare (11:15)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------------- |
 | **E05-S001** — Battlefield in a thought | ![Webtoon panel E05-W-P29](assets/anime-season-1-investor/E5/E05-W-P29.png)<br>[View full image](assets/anime-season-1-investor/E5/E05-W-P29.png) | 0:00–2:45 | Gik'nrit's simulated battlefield allows James to coordinate defenders and explain assignments. | 2:45 | 0:00 | **0:00 / 2:45 / 0:00** | 2:45 | 165s | 1,375 | C01,C03,C05,C06,C07 ·  L06 ·  P07 |
 | **E05-S002** — Plan becomes action | ![Webtoon panel E05-W-P37](assets/anime-season-1-investor/E5/E05-W-P37.png)<br>[View full image](assets/anime-season-1-investor/E5/E05-W-P37.png) | 2:45–5:25 | The defenders leave the simulation and move toward assigned positions while James stalls Drake. | 2:40 | 0:00 | **0:00 / 2:40 / 0:00** | 2:40 | 160s | 1,334 | C01,C03,C05,C06,C07 ·  L01,L04,L05,L06 ·  P07 |
@@ -157,14 +155,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E05-SL01** — Everyday-life coda (proposal only) |  | 7:45–8:45 | Joir watches one mundane step of Iktron's maintenance, then attention returns to Drake's decision; not an approved new event. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C02,C07 · L09 · P07 |
 | **E05-S004** — Drake catches on | ![Webtoon panel E07-W-P2](assets/anime-season-1-investor/E7/E07-W-P2.png)<br>[View full image](assets/anime-season-1-investor/E7/E07-W-P2.png) | 8:45–11:15 | Drake notices James's tiny tactical pause and redirects reinforcements; the duel is imminent. | 2:30 | 0:00 | **0:00 / 2:30 / 0:00** | 2:30 | 150s | 1,250 | C01,C08,C13 ·  L04 ·  — |
 | **E05 TOTAL** |  | **00:00–11:15** | **The final hook remains last.** | **11:15** | **0:00** | **0:00 / 11:15 / 0:00** | **11:15** | **675s** | 5,626 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,170,208** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,170,208** |  |
 
 **Production boundary:** E05-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 6 — The First Shot (11:00)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------- |
 | **E06-S001** — Reinforcements move | ![Webtoon panel E07-W-P4](assets/anime-season-1-investor/E7/E07-W-P4.png)<br>[View full image](assets/anime-season-1-investor/E7/E07-W-P4.png) | 0:00–2:10 | Drake advances support units; James prepares to intercept rather than abandon the village. | 2:10 | 0:00 | **0:00 / 2:10 / 0:00** | 2:10 | 130s | 1,084 | C01,C08,C13 ·  L04 ·  P06 |
 | **E06-S002** — Missile attack fails | ![Webtoon panel E07-W-P7](assets/anime-season-1-investor/E7/E07-W-P7.png)<br>[View full image](assets/anime-season-1-investor/E7/E07-W-P7.png) | 2:10–4:40 | James launches missiles; Royal mages stop them with shields amid explosions and smoke. | 2:30 | 1:20 | **0:40 / 1:34 / 0:16** | 3:37.2 | 218s | 1,817 | C01,C08,C13 ·  L04 ·  P10,P11 |
@@ -172,14 +170,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E06-SL01** — Everyday-life coda (proposal only) |  | 6:45–7:45 | The village continues ordinary trade, unaware of the danger in the sky; contrast immediately before the plasma cliffhanger. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C12 · L01 · P04 |
 | **E06-S004** — Plasma impact hook | ![Webtoon panel E07-W-P16](assets/anime-season-1-investor/E7/E07-W-P16.png)<br>[View full image](assets/anime-season-1-investor/E7/E07-W-P16.png) | 7:45–11:00 | James fires piercing plasma through the barrier; Drake realizes the danger too late. Outcome hidden. | 3:15 | 1:00 | **0:30 / 2:33 / 0:12** | 4:05.2 | 246s | 2,050 | C01,C08,C13 ·  L04 ·  P06,P11,P12 |
 | **E06 TOTAL** |  | **00:00–11:00** | **The final hook remains last.** | **11:00** | **2:20** | **1:10 / 9:22 / 0:28** | **12:57.2** | **779s** | 6,493 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,350,544** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,350,544** |  |
 
 **Production boundary:** E06-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. The **only retimed fight portions** are E06-S002 (1:20 inside the 2:30 scene), E06-S004 (1:00 inside the 3:15 scene). All other portions are 1×.
 
 
 ## Episode 7 — A Life for a Life (11:30)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------- |
 | **E07-S001** — Death elsewhere | ![Webtoon panel E07-W-P24](assets/anime-season-1-investor/E7/E07-W-P24.png)<br>[View full image](assets/anime-season-1-investor/E7/E07-W-P24.png) | 0:00–2:10 | A distant prisoner dies instead of Drake; a soul gem on Drake's bracelet cracks. | 2:10 | 0:00 | **0:00 / 2:10 / 0:00** | 2:10 | 130s | 1,084 | C08,C14 ·  L04,L08 ·  P13 |
 | **E07-S002** — Defense collapses | ![Webtoon panel E08-W-P13](assets/anime-season-1-investor/E8/E08-W-P13.png)<br>[View full image](assets/anime-season-1-investor/E8/E08-W-P13.png) | 2:10–4:35 | Drake's soldiers scramble; mages are exhausted, and the confrontation becomes angrier. | 2:25 | 0:20 | **0:10 / 2:11 / 0:04** | 2:41.2 | 162s | 1,350 | C01,C08,C13 ·  L04 ·  P11 |
@@ -187,14 +185,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E07-SL01** — Everyday-life coda (proposal only) |  | 7:05–8:05 | A prison guard settles into a mundane break before the prison sequence turns dangerous; avoid duplicating noodle dialogue. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C14 · L07 · P15 |
 | **E07-S004** — Prison dinner hook |  | 8:05–11:30 | Three guards cook noodles; prisoner screams interrupt them, then an unseen blast rocks the prison. | 3:25 | 0:00 | **0:00 / 3:25 / 0:00** | 3:25 | 205s | 1,709 | C14 ·  L07,L08 ·  P15 |
 | **E07 TOTAL** |  | **00:00–11:30** | **The final hook remains last.** | **11:30** | **1:40** | **0:50 / 10:20 / 0:20** | **12:54** | **775s** | 6,460 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,343,680** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,343,680** |  |
 
 **Production boundary:** E07-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. The **only retimed fight portions** are E07-S002 (0:20 inside the 2:25 scene), E07-S003 (1:20 inside the 2:30 scene). All other portions are 1×.
 
 
 ## Episode 8 — The Prisoner and the Sphere (11:00)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | --------------------------------------- |
 | **E08-S001** — Dunge appears | ![Webtoon panel E08-W-P1](assets/anime-season-1-investor/E8/E08-W-P1.png)<br>[View full image](assets/anime-season-1-investor/E8/E08-W-P1.png) | 0:00–2:15 | Dust clears around a damaged sphere; James hovers in the breach, frightening guards and inmates. | 2:15 | 0:00 | **0:00 / 2:15 / 0:00** | 2:15 | 135s | 1,125 | C10,C14 ·  L08 ·  — |
 | **E08-S002** — Dunge's threat | ![Webtoon panel E08-W-P32](assets/anime-season-1-investor/E8/E08-W-P32.png)<br>[View full image](assets/anime-season-1-investor/E8/E08-W-P32.png) | 2:15–4:20 | James's flames change color and he rushes past the guards, threatening them. | 2:05 | 0:00 | **0:00 / 2:05 / 0:00** | 2:05 | 125s | 1,042 | C10,C14 ·  L08 ·  — |
@@ -202,14 +200,14 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E08-SL01** — Everyday-life coda (proposal only) |  | 6:55–7:55 | Joir fidgets during an ordinary moment inside the protected house; do not reveal the sphere's function. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C02,C07 · L09 · P01 |
 | **E08-S004** — Missing troops hook | ![Webtoon panel E11-W-P37](assets/anime-season-1-investor/E11/E11-W-P37.png)<br>[View full image](assets/anime-season-1-investor/E11/E11-W-P37.png) | 7:55–11:00 | Gik'nrit surveys the area, finds no expected attackers and realizes a route was overlooked. | 3:05 | 0:00 | **0:00 / 3:05 / 0:00** | 3:05 | 185s | 1,542 | C06 ·  L01,L05,L06 ·  P07 |
 | **E08 TOTAL** |  | **00:00–11:00** | **The final hook remains last.** | **11:00** | **0:00** | **0:00 / 11:00 / 0:00** | **11:00** | **660s** | 5,501 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,144,208** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,144,208** |  |
 
 **Production boundary:** E08-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. **No fighting windows:** the ENTIRE episode is 1×, including visually energetic activities.
 
 
 ## Episode 9 — A Gift for the Captain (11:30)
 
-| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Paid seconds worst (12% success) | Needed resource placeholders |
+| Scene | Paired Webtoon Panel | Episode timecode | Plot summary | Final edited target | Fight window | Edited **3× / 1× / 0.2×** | Successful native source | Billable successful seconds | Estimated paid seconds (12% usable) | Needed resource placeholders |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------- | ------------------: | -----------: | ------------------------- | -----------------------: | --------------------------: | ---------------------------------: | ------------------------------------------------------------- |
 | **E09-S001** — Peny leads infiltrators | ![Webtoon panel E12-W-P3](assets/anime-season-1-investor/E12/E12-W-P3.png)<br>[View full image](assets/anime-season-1-investor/E12/E12-W-P3.png) | 0:00–1:50 | Peny guides a covert group into the area while concealing resentment toward its commander. | 1:50 | 0:00 | **0:00 / 1:50 / 0:00** | 1:50 | 110s | 917 | C11,C15 ·  L10 ·  P17 |
 | **E09-S002** — Gik'nrit races back | ![Webtoon panel E12-W-P13](assets/anime-season-1-investor/E12/E12-W-P13.png)<br>[View full image](assets/anime-season-1-investor/E12/E12-W-P13.png) | 1:50–3:30 | Gik'nrit and defenders rush home; two members break off under his orders. | 1:40 | 0:00 | **0:00 / 1:40 / 0:00** | 1:40 | 100s | 834 | C06,C13 ·  L01,L05 ·  P07 |
@@ -218,21 +216,19 @@ In the tables below, **only a nonzero 'Fight window' permits 3× or 0.2×**. The
 | **E09-SL01** — Everyday-life coda (proposal only) |  | 8:10–9:10 | Joir and Iktron share a brief routine moment inside the house before the incoming artillery order; no new lore. | 1:00 | 0:00 | **0:00 / 1:00 / 0:00** | 1:00 | 60s | 500 | C02,C07 · L09 · P01 |
 | **E09-S005** — Cannon-fire hook | ![Webtoon panel E12-W-P31](assets/anime-season-1-investor/E12/E12-W-P31.png)<br>[View full image](assets/anime-season-1-investor/E12/E12-W-P31.png) | 9:10–11:30 | Three cannons fire; James, Gik'nrit, Iktron, Joir and Dunge react. Impact remains unseen. | 2:20 | 0:00 | **0:00 / 2:20 / 0:00** | 2:20 | 140s | 1,167 | C01,C02,C06,C07,C08,C10,C13 ·  L02,L04,L08,L09 ·  P01,P08,P16 |
 | **E09 TOTAL** | ![Webtoon panel E13-W-03](assets/anime-season-1-investor/E13/E13-W-03.png)<br>[View full image](assets/anime-season-1-investor/E13/E13-W-03.png) | **00:00–11:30** | **The final hook remains last.** | **11:30** | **0:40** | **0:20 / 11:02 / 0:08** | **12:03.2** | **724s** | 6,035 | **Reused by code, definitions pending** |
-| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | 1,255,280** |  |
+| **AI generation credits (1,040 credits / 5s)** |  |  |  |  |  |  |  |  | **1,255,280** |  |
 
 **Production boundary:** E09-SL01 is a **proposed, unwritten 1:00** slice-of-life scene immediately before the final hook; author to approve and script later. The **only retimed fight portions** are E09-S003 (0:40 inside the 2:40 scene). All other portions are 1×.
 
-## 4. Season generation budget: three success-rate cases
+## 4. Season generation credit budget
 
-| Case | Success rate | Rounded successful source needed | Paid generation seconds (including rejected attempts) | Credits at verified Dreamina rate R |
-|---|---:|---:|---:|---|
-| **Best** | 50% success (~2 attempts per usable result) | 6,188s | **12,376s (03:26:16)** | **12,376 × R** |
-| **Medium — funding working case** | **30% success (~3.33 attempts)** | 6,188s | **20,640s (05:44:00)** | **20,640 × R** |
-| **Worst — exposure case** | **12% success (~8.33 attempts)** | 6,188s | **51,580s (14:19:40)** | **51,580 × R** |
+| Assumed usable-generation rate | Rounded successful source needed | Estimated paid generation seconds (including rejected attempts) | Estimated credits at rate R |
+|---:|---:|---:|---|
+| **12%** (~8.33 attempts per usable result) | **6,188s** | **51,580s (14:19:40)** | **51,580 × R** |
 
-A provisional funding request is **20,640 × R credits** in the medium scenario. Worst-case exposure is **51,580 × R credits** if only 12% of attempted generated footage is usable. **There is still no verified Dreamina Seedance 2.5 credits-per-second rate**, so these are credit formulas, not fixed numeric credit quotes.
+The single planning estimate is **51,580 × R credits**, assuming 12% of generated footage is usable. At the illustrative rate of **1,040 credits per 5 seconds** (208 credits per second), this equals **10,728,640 credits**. The current Dreamina Seedance 2.5 rate has **not been independently verified**, so confirm the actual account rate and billing increments before treating this as a quotation.
 
-**Scene-level cost calculation:** let B be successful whole-second source requirements for one scene. Best = `ceil(B/0.50)`, medium = `ceil(B/0.30)`, and worst = `ceil(B/0.12)`; add every scene's amount to form its episode and the season totals. Estimated tries of 3.33 and 8.33 are **expected averages**, not a fixed number of generations needed for each successful clip. All nine one-minute slice-of-life segments and **fight-only** 3×/1×/0.2× playback speeds remain unchanged.
+**Scene-level credit calculation:** let B be a scene's rounded successful-source seconds. Estimated paid seconds = `ceil(B/0.12)`; add those amounts across each episode and the season. Estimated credits = paid seconds × R. The 8.33 attempts per usable result is a planning average, not a fixed number of generations for any clip. All nine one-minute slice-of-life segments and **fight-only** 3×/1×/0.2× playback speeds remain unchanged.
 
 Excluded: fixed-length clip billing waste, unused tails/handles, changing model/resolution/audio rates, image generation, voices, music, lip-sync, upscaling, editing labor, taxes and later episodes. The estimate assumes all proposed story footage is generated video; the acceptance rate and provider billing need pilot verification.
 
@@ -306,7 +302,7 @@ Excluded: fixed-length clip billing waste, unused tails/handles, changing model/
 2. **Confirm all nine one-minute slice-of-life segments**, keeping them before the cliffhanger: E01 S008 is expanded; E02–E09 SL01 are proposal-only and have not yet been canonically scripted.
 3. **Review exactly the five stated fight windows.** 3× = **300%**, 0.2× = **20%**; no slow or fast allocations may leak into travel, dialogue, preparation, aftermath or other nonfight footage.
 4. **Time scratch animatics in real playback** and check whether edited dialogue and acting earn the new 99:10 total. Update each scene's fight-window length if the screenplay changes.
-5. **Run a real Seedance pilot** across normal dialogue and multi-character fight motion; compare actual acceptance rates against the 50%, 30% and 12% scenarios, recording paid seconds per attempt, visual continuity problems and discarded clip ends.
+5. **Run a real Seedance pilot** across normal dialogue and multi-character fight motion; compare the measured usable-generation rate against the assumed 12%, recording paid seconds per attempt, visual continuity problems and discarded clip ends.
 6. **Fill the one-page character, environment, weapon, vehicle and building placeholders** from the author's future approved resources; reuse definitions rather than writing new ones for every episode.
 7. **Sign off story continuity**, including rocket motion, E09's proposed additional fight action, cannon count and the unresolved C12 ending.
 

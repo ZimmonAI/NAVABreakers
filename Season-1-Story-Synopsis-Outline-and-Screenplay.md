@@ -1,12 +1,12 @@
 # NAVABreakers — Season 1: Story Synopsis, Outline and Screenplay
 
-James, a legendary war hero who only wants to raise his young grandson Joir in peace, must defend their scrapyard village when a Royal force comes to seize him—and discovers that protecting his family may demand one last impossible escape.
+James, a legendary war hero who only wants to raise his young grandson Joir in peace, must defend their scrapyard village when a Royal force comes to seize him - and discovers that protecting his family may demand one last impossible escape.
 
-This is the first season in Joir's larger story, setting in motion the events that will one day lead him on his own journey.
+This is the first season in Joir's story, setting in motion the events that will one day lead him on his own journey.
 
 ## Story Synopsis
 
-Long after a devastating multiverse war against the Dark, James has turned his back on battles, governments and royal power struggles. At 69, the former war hero wants something simpler: a peaceful life with five-year-old Joir, the child he has raised for four years. Their home is a lively, mixed-species scrapyard village where strange technology, levitating merchandise, temperamental machinery and eccentric neighbors are part of daily life.
+Long after a devastating multiverse war against the Dark Forces, James has turned his back, on battles governments and royal power struggles. At 69, the former war hero wants something simpler: a peaceful life with five-year-old Joir, the child he has raised for four years. Their home is a lively, mixed-species scrapyard village where strange technology, levitating merchandise, temperamental machinery and eccentric neighbors are part of daily life.
 
 Peace in the village is never completely quiet. James's inverted rocket-house rattles the marketplace, Joir's curiosity sends everyday routines into chaos, and friends such as Ama, Eeth, Gik'nrit and the robot Iktron help hold their unusual community together. Yet beneath this comic disorder, James is keeping a far more dangerous world at a distance.
 

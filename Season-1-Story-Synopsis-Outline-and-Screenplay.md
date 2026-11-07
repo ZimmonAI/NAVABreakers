@@ -113,8 +113,8 @@ The opening nine episodes follow the scene order and screen times below. Each cl
 
 ## The Rest of Season 1 — The Cost of Protection
 
-The nine-episode opening arc ends as the cannons fire, but the season's story does not end there. The attack injures Joir, forcing James to return and activate the living orb to heal him. A further Royal assault leaves their temporary refuge unsafe. James had disappeared years earlier to protect Joir, and now he escapes with him again, using special teleportation technology to reach a cold northern village where they begin to recover.
+The nine-episode opening arc ends as the cannons fire, but the season's story does not end there. The attack injures Joir, forcing James to return and activate the living orb to heal him. A further Royal assault leaves their temporary refuge unsafe. James had disappeared years earlier to protect Joir, and now he escapes with him again, using special teleportation technology to reach a cold planet where they begin to recover and revenge. 
 
 ## Beyond Season 1 — Joir's Journey
 
-The northern village becomes the setting for the next chapter of Joir's life. In the season that follows, James eventually leaves him. Joir then sets out to find his grandfather, beginning the larger journey that unfolds from the events of this first season.
+The cold planet becomes the setting for the next chapter of Joir's life. In the season that follows, James eventually leaves him. Joir then sets out to find his grandfather, beginning the larger journey that unfolds from the events of this first season.

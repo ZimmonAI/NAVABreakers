@@ -1,27 +1,29 @@
 # NAVABreakers — Season 1: Story Synopsis, Outline and Screenplay
 
-James, a legendary war hero who only wants to raise his young grandson Joir in peace, must defend their scrapyard village when a Royal force comes to seize him - and discovers that protecting his family may demand one last impossible escape.
+After secretly disappearing to raise his grandson Joir, James—a hero of the war against the Dark Forces who still carries secrets from that conflict—must protect their hidden village when Royal forces track him down.
 
 This is the first season in Joir's story, setting in motion the events that will one day lead him on his own journey.
 
 ## Story Synopsis
 
-Long after a devastating multiverse war against the Dark Forces, James has turned his back, on battles governments and royal power struggles. At 69, the former war hero wants something simpler: a peaceful life with five-year-old Joir, the child he has raised for four years. Their home is a lively, mixed-species scrapyard village where strange technology, levitating merchandise, temperamental machinery and eccentric neighbors are part of daily life.
+The multiverse war against the Dark Forces is over, and James is one of the heroes who helped win it. But the end of the war has not brought him peace. James still guards secrets from that conflict, and powerful figures in the government view him as a threat. He wants no part in their political power games.
 
-Peace in the village is never completely quiet. James's inverted rocket-house rattles the marketplace, Joir's curiosity sends everyday routines into chaos, and friends such as Ama, Eeth, Gik'nrit and the robot Iktron help hold their unusual community together. Yet beneath this comic disorder, James is keeping a far more dangerous world at a distance.
+Four years ago, when Joir's parents left their one-year-old child in James's care, James made his choice: protect his family by vanishing without a trace. He quietly withdrew from public life, concealing his whereabouts even from the Royal government. Now 69, he is raising five-year-old Joir in a lively, mixed-species scrapyard village where strange technology, levitating merchandise, temperamental machinery and eccentric neighbors are part of daily life.
 
-When an approaching Royal force appears on his monitors, James knows the danger is real. General Drake has come to locate and seize him, supported by powerful soldiers, mages and artillery. James places a mysterious silver orb in Joir's care, suits up and calls on his companions to protect the village. A meeting with Yether, someone James knows from the past, makes the confrontation personal.
+Peace in the village is never completely quiet. James's inverted rocket-house rattles the marketplace, Joir's curiosity sends everyday routines into chaos, and friends such as Ama, Eeth, Gik'nrit and the robot Iktron help hold their unusual community together. Beneath this comic disorder lies the life James deliberately built beyond the reach of those who once knew him.
+
+When an approaching Royal force appears on his monitors, James knows his hidden life has been discovered. General Drake leads a search-and-seizure operation backed by political opponents who fear what James knows and what he might do, supported by powerful soldiers, mages and artillery. James has no desire to reenter the struggle for power. But with Joir, their home and their neighbors in danger, he has no choice but to defend them. He places a mysterious silver orb in Joir's care, equips his nano-suit and calls on his companions. A meeting with Yether, someone James knows from the past, makes the confrontation personal.
 
 As the Royals surround the area, James and his team divide their attention between scouting hidden artillery, preparing home defenses and confronting Drake directly. Missiles collide with magical barriers; plasma fire breaks through supposedly impenetrable defenses; a strange soul-gem bracelet reveals that defeating Drake is not straightforward. Meanwhile, another threat moves toward the village by a route the defenders have overlooked.
 
-The attack reaches James's protected home, and Joir is injured. James returns to save him, awakening the living orb's extraordinary ability to restore what has been damaged. But the Royals attack again. Rather than surrender Joir to a war he never wanted to fight, James uses special teleportation technology to carry them away to a distant village in the cold north, where they begin to recover.
+The attack reaches James's protected home, and Joir is injured. James returns to save him, activating the living orb's extraordinary ability to restore what has been damaged. But the Royals attack again. James refuses to let a government's political struggle consume Joir's life. Using special teleportation technology, he carries them away to a distant village in the cold north, where they begin to recover.
 
-Season 1 tells the story of a grandfather trying to preserve a small, imperfect life of laughter and family against forces that refuse to leave his past behind.
+Season 1 tells the story of a grandfather who helped end a multiverse war, vanished to raise a child in secret, and fights only when the political forces pursuing him threaten the family and peaceful life he chose.
 
 ## Season 1 Outline
 
 ### Act I — A Home Worth Protecting
-An airborne livestreamer discovers a thriving village hidden among scrap. James's rocket-house causes familiar chaos, while Joir and their neighbors carry on. James discovers a mysterious silver sphere, senses a Royal force approaching and entrusts the object to Joir.
+After the war against the Dark Forces, James keeps his wartime secrets and stays out of the government's political struggles by disappearing with Joir, the child left in his care. Years later, an airborne livestreamer discovers a thriving village hidden among scrap. James's rocket-house causes familiar chaos, while Joir and their neighbors carry on. James discovers a mysterious silver sphere, senses a Royal force approaching and entrusts the object to Joir.
 
 ### Act II — An Unwanted Reunion
 Drake advances with Royal soldiers and mages, accompanied by the uneasy Yether. James's companions scout the approaches and uncover heavy artillery. James greets the invaders with an unsettling friendliness; news of dark-mage involvement ends any pretense of diplomacy.
@@ -33,7 +35,7 @@ Gik'nrit helps the team plan in a simulated battlefield, while Iktron works on t
 A prisoner dies elsewhere as a soul gem on Drake's bracelet breaks. James attacks the generals with a hammer. Trouble erupts at a prison. Back home, Joir holds the orb as Iktron shields the house. Gik'nrit discovers a missed approach; Peny guides infiltrators forward. Three Royal cannons fire toward James's home.
 
 ### Act V — The Orb and the Northern Escape
-The attack injures Joir. James returns and heals him with the living orb. Another Royal assault leaves them no safe place to stay, so James uses teleportation technology to carry Joir north. They begin recovering in another village, but the shadow of James's past follows them.
+The attack injures Joir. James returns and heals him with the living orb. Another Royal assault leaves them no safe place to stay. Rather than let the government's pursuit endanger Joir again, James uses teleportation technology to carry him north. They begin recovering in another village, far from the political struggle James tried to escape.
 
 ## Screenplay — Episode-by-Episode Scene Progression
 
@@ -111,7 +113,7 @@ The opening nine episodes follow the scene order and screen times below. Each cl
 
 ## The Rest of Season 1 — The Cost of Protection
 
-The nine-episode opening arc ends as the cannons fire, but the season's story does not end there. The attack injures Joir, forcing James to return and activate the living orb to heal him. A further Royal assault drives James to make a different choice: instead of fighting indefinitely, he takes Joir away with special teleportation technology. Their escape leads to a cold northern village, where they begin to recover.
+The nine-episode opening arc ends as the cannons fire, but the season's story does not end there. The attack injures Joir, forcing James to return and activate the living orb to heal him. A further Royal assault makes clear that the political forces hunting James will not leave his family alone. James once disappeared to protect Joir; now he must do so again, using special teleportation technology to escape with him to a cold northern village, where they begin to recover.
 
 ## Beyond Season 1 — Joir's Journey
 

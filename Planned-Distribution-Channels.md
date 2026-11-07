@@ -12,8 +12,6 @@ NAVABreakers will meet its audience directly online. Full episodes form the hear
 | **TikTok** | Short episode highlights and original character-centered slice-of-life stories. |
 | **Instagram Reels** | Short stories, episode moments, character introductions, artwork and release announcements. |
 | **Facebook Reels** | Episode highlights, character shorts, community posts and release announcements. |
-| **Discord and Reddit** | Conversations about characters, episodes, mysteries and the NAVABreakers world. |
-| **Webtoon channels** | Companion comic storytelling and links between comic and anime audiences. |
 
 ## Full-Episode Premieres — Every 30 Days
 
